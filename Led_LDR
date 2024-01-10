@@ -1,0 +1,20 @@
+// C++ code
+#define LED 12
+#define LDR A0
+void setup()
+{
+pinMode(LED, OUTPUT);
+pinMode(LDR, INPUT);
+}
+
+void loop()
+{
+if (analogRead(LDR)>900){
+digitalWrite(LED, LOW);
+}
+
+else{
+digitalWrite(LED, HIGH);
+}
+
+}
